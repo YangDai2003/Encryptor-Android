@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vertrauter</string>
+    <string name="copy">kopieren</string>
+    <string name="change">Modus wechseln</string>
+    <string name="typein">Input:</string>
+    <string name="out">Output:</string>
+    <string name="encode">enkodieren</string>
+    <string name="decode">dekodieren</string>
+    <string name="identify">"  Zufälliges Generieren von 32-stelligen-ID"</string>
+    <string name="enrsa">ID enkodieren</string>
+    <string name="init">Öffentlichen RSA-Key senden</string>
+    <string name="dersa">ID dekodieren</string>
+    <string name="titel">Hilfe</string>
+    <string name="content">Diese APP verwendet AES256, RSA1024 und Base64 für die Text- und Bildverschlüsselung.\nDie Schritte sind:\n1) Bevor Sie eine verschlüsselte Konversation beginnen, klicken Sie auf \"Öffentlichen RSA-Schlüssel senden\", senden Sie ihn bitte an die andere Partei.\n2) Nachdem Sie den öffentlichen Schlüssel erhalten haben, kopieren Sie bitte den öffentlichen Schlüssel und fügen Sie ihn mit dem Wort (Input) in das Eingabefeld ein. Klicken Sie auf \"Switch Mode\", wechseln Sie zu \"ID enkodieren\" und klicken Sie das Eingabefeld in der oberen linken Ecke, um 32-stelligen-ID zu generieren, und klicken Sie dann auf \"Kopieren\" oder \"Teilen\", um das Ergebnis an die andere Partei zu senden.\n3) Nachdem Sie die verschlüsselte ID erhalten haben, fügen Sie sie in das Eingabefeld ein, stellen Sie den Modus auf \"ID dekodieren\" ein, klicken Sie auf \"Kopieren\" und es wird automatisch in das ID-Feld in der oberen linken Ecke eingefügt.\n4) Zu diesem Zeitpunkt haben die beiden Parteien eine Eins-zu-Eins-Verschlüsselung eingerichtet (die ID ist die gleiche), und Sie können einen formellen verschlüsselten Chat starten. Wenn Sie eine Nachricht senden, wechseln Sie zu \"Enkodieren\", geben Sie den Text ein und klicken Sie auf \"Kopieren\" oder \"Teilen\", um ihn an die andere Partei zu senden.\n5) Um die Nachricht zu entschlüsseln, gehen Sie zu \"Dekodieren\" und fügen Sie den zu entschlüsselnden Text ein.</string>
+    <string name="label">Vertrauter-Bild Modus</string>
+    <string name="share">teilen</string>
+    <string name="pick">Foto auswählen</string>
+    <string name="confirmEn">festlegen und enkodieren</string>
+    <string name="save">Das Foto wird im Album gespeichert</string>
+    <string name="path">.txt Datei Pfad</string>
+    <string name="info">Bitte führen Sie zuerst die Schritte 1, 2 und 3 auf der vorherigen Seite aus.\nEnkodieren: Wählen Sie ein Foto aus, klicken Sie auf \"festlegen\" und senden Sie die generierte verschlüsselte Datei an die andere Partei.\nDekodieren: Teilen Sie in der Chat-APP die .txt-Datei mit dieser APP, wählen Sie \"Encodieren\" und klicken Sie auf \"festlegen\", um sie in das Originalbild zu entschlüsseln.</string>
+    <string name="error">Tippfehler</string>
+    <string name="error2">Datei wurde nicht gefunden</string>
+    <string name="success">erfolgreich</string>
+    <string name="back">Zurückkehren</string>
+    <string name="confirmDe">festlegen und dekodieren</string>
+</resources>

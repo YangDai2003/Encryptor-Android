@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".TextActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/share"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_share_24"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOutput"
+        app:layout_constraintStart_toStartOf="@+id/buttonCopy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/label"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_photo_24"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCopy"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDelete"
+        app:layout_constraintTop_toTopOf="@+id/buttonCopy" />
+
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:autoSizeTextType="none"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="?colorSurfaceVariant"
+        android:hint="@string/out"
+        android:scrollbars="vertical"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInput"
+        app:layout_constraintStart_toStartOf="@+id/textViewInput"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/textViewInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autoSizeTextType="none"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="?colorSurfaceVariant"
+        android:gravity="top"
+        android:hint="@string/typein"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:autoSizeMaxTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/change"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_swap_horiz_24"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRsa"
+        app:layout_constraintEnd_toStartOf="@+id/textViewId"
+        app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:autoSizeMaxTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/copy"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_copy_all_24"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/buttonShare"
+        app:layout_constraintStart_toStartOf="@+id/buttonRsa" />
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape"
+        android:src="@drawable/baseline_delete_forever_24"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRsa"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonClear"
+        app:layout_constraintTop_toTopOf="@+id/buttonRsa"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="none"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="?colorSurfaceVariant"
+        android:gravity="center"
+        android:hint="@string/identify"
+        android:maxWidth="210dp"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_password_24"
+        app:drawableTint="?colorOnSecondaryContainer"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMode"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonClear"
+        app:layout_constraintTop_toTopOf="@+id/buttonMode" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:autoSizeMaxTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/init"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_key_24"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCopy"
+        app:layout_constraintStart_toStartOf="@+id/buttonMode" />
+
+    <ImageButton
+        android:id="@+id/buttonInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape"
+        android:src="@drawable/baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonShare"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPhoto"
+        app:layout_constraintTop_toTopOf="@+id/buttonShare"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInput"
+        app:layout_constraintStart_toStartOf="@+id/textViewInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/imageButtonClear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewId"
+        app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

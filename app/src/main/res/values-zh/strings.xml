@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">知己</string>
+    <string name="copy">复制</string>
+    <string name="change">模式切换</string>
+    <string name="typein">请输入:</string>
+    <string name="out">结果是:</string>
+    <string name="encode">加密模式</string>
+    <string name="decode">解密模式</string>
+    <string name="identify">"  随机生成32位ID"</string>
+    <string name="enrsa">加密ID</string>
+    <string name="init">发送RSA公钥</string>
+    <string name="dersa">解密ID</string>
+    <string name="titel">使用帮助</string>
+    <string name="content">软件使用AES256，RSA1024和Base64为文本和图像加密。\n使用步骤为:\n1）开始一段加密对话前，请点击“发送RSA公钥”，将公钥发送给对方。\n2）收到公钥后，请将公钥复制粘贴到有（请输入）字样的输入框，并按“模式切换”，切换到“加密ID”，并点击左上角输入框生成随机ID，随后点击“复制“或”分享”，将结果发送给对方。\n3）接收到加密的ID后，将其粘贴到输入框，并将模式调至“解密ID”，点击“复制”，ID会自动解密并粘贴到ID框。\n4）此时双方已建立一对一加密(ID一致），可以开始正式的加密聊天。发送信息时，调至“加密模式”，输入文本后，点击“复制“或”分享”，发送给对方。\n5）要解密消息，则调至“解密模式”，粘贴要解密的文本。</string>
+    <string name="label">知己-图片加解密</string>
+    <string name="share">分享</string>
+    <string name="pick">选取照片</string>
+    <string name="confirmEn">确定并加密</string>
+    <string name="save">图片已保存到相册</string>
+    <string name="path">文本文件路径</string>
+    <string name="info">请先在上个页面完成步骤1，2，3。\n加密模式: 选取照片，点击确定后，将生成的加密文件发送给对方。\n解密模式: 在聊天软件中将对方发送的.txt文件分享给此应用，选择\"解密模式\"，点击确定即可解密成原图。</string>
+    <string name="error">输入有误</string>
+    <string name="error2">分享文件不存在</string>
+    <string name="success">成功</string>
+    <string name="back">返回</string>
+    <string name="confirmDe">确定并解密</string>
+</resources>

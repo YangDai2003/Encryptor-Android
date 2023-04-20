@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Confidant</string>
+    <string name="copy">Copy</string>
+    <string name="change">Switch Mode</string>
+    <string name="typein">Input:</string>
+    <string name="out">Output:</string>
+    <string name="encode">Encode</string>
+    <string name="decode">Decode</string>
+    <string name="identify">"  Randomly generate 32-digits ID"</string>
+    <string name="enrsa">Encode ID</string>
+    <string name="init">Send RSA Public Key</string>
+    <string name="dersa">Decode ID</string>
+    <string name="titel">Use Help</string>
+    <string name="content">This APP uses AES256, RSA1024 and Base64 for text and image encryption.\nThe steps are:\n1) Before starting an encrypted conversation, click "Send RSA Public Key", send it to the other party.\n2) After receiving the public key, please copy and paste the public key into the input box with the word (Input), press "Switch Mode", switch to "Encode ID", and click the input box in the upper left corner to randomly generate 32-digits ID, and then click "Copy" or "Share" to send the result to the other party.\n3) After receiving the encrypted ID, paste it into the input box, adjust the mode to "Decode ID", click "Copy", and it will automatically pasted into the ID box in the upper left corner.\n4) At this time, the two parties have established one-to-one encryption (the ID is the same), and you can start a formal encrypted chat. When sending a message, turn to \"Encode\", enter the text, and click "Copy" or "Share" to send it to the other party.\n5) To decrypt the message, go to \"Decode\" and paste the text to be decrypted.</string>
+    <string name="label">Confidant-Photo Mode</string>
+    <string name="share">Share</string>
+    <string name="pick">Pick Photo</string>
+    <string name="confirmEn">Confirm to encode</string>
+    <string name="save">Photo is saved to the album</string>
+    <string name="path">.txt File Path</string>
+    <string name="info">Please complete steps 1, 2, and 3 on the previous page first.\nEncryption: Select a photo, click \"confirm\", and send the generated encrypted file to the other party.\nDecryption: In the chat APP, share the .txt file sent by the other party to this APP, select \"Decryption Mode\", and click \"confirm\" to decrypt it into the original image.</string>
+    <string name="error">typo</string>
+    <string name="error2">File doesn\'t exist</string>
+    <string name="success">success</string>
+    <string name="back">Return</string>
+    <string name="confirmDe">Confirm to decode</string>
+</resources>
