@@ -43,13 +43,12 @@ import java.io.OutputStream;
 public class FragmentDe extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
-    String text = "";
+    private String text = "", key, iv;
     View view;
     TextView path;
     Button confirm, share;
     ImageView imageView;
     Uri out;
-    String key, iv;
     Context mContext;
 
     public FragmentDe() {

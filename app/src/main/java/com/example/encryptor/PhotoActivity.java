@@ -4,7 +4,6 @@ import static com.example.encryptor.FileUtils.getFileFromUri;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -26,6 +25,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.color.DynamicColors;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.elevation.SurfaceColors;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -36,9 +36,9 @@ public class PhotoActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
-    private final int normalSize = 14;
+    private static final int normalSize = 14;
     private TabLayoutMediator mediator;
-    String filePath = "";
+    private String filePath = "";
 
     public interface onDataChangeListener {
         void onDataChange(String data);
@@ -59,13 +59,12 @@ public class PhotoActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.song_detail_toolbar_menu_share) {
-            AlertDialog alertDialog1 = new AlertDialog.Builder(this)
+            new MaterialAlertDialogBuilder(this)
                     .setTitle(R.string.titel)//标题
                     .setMessage(R.string.info)//内容
                     .setIcon(R.mipmap.lock)//图标
                     .setCancelable(true)
-                    .create();
-            alertDialog1.show();
+                    .show();
         } else if (item.getItemId() == android.R.id.home) {
             Intent intent1 = new Intent(this, TextActivity.class);
             startActivity(intent1);
@@ -140,7 +139,7 @@ public class PhotoActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("user", MODE_PRIVATE);
         String idm = sharedPreferences.getString("id", "");
         if (idm.equals("")) {
-            AlertDialog alertDialog1 = new AlertDialog.Builder(this)
+           new MaterialAlertDialogBuilder(this)
                     .setTitle(R.string.titel)//标题
                     .setMessage(R.string.info)//内容
                     .setIcon(R.mipmap.lock)//图标
@@ -150,8 +149,7 @@ public class PhotoActivity extends AppCompatActivity {
                         startActivity(intent1);
                         finish();
                     })
-                    .create();
-            alertDialog1.show();
+                    .show();
         }
         Intent intent = getIntent();
         String action = intent.getAction();

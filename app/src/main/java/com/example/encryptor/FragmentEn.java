@@ -44,9 +44,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class FragmentEn extends Fragment {
-
     private static final String ARG_PARAM1 = "param1";
-
     Context mContext;
     View view;
     Button picker, confirm, share;
@@ -54,7 +52,7 @@ public class FragmentEn extends Fragment {
     TextView path;
     ActivityResultLauncher<Intent> intentActivityResultLauncher;
     Uri uri;
-    String key, iv;
+    private String key, iv;
 
     public FragmentEn() {
         // Required empty public constructor

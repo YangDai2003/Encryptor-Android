@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -32,6 +31,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.color.DynamicColors;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.security.SecureRandom;
 import java.util.Map;
@@ -147,15 +147,12 @@ public class TextActivity extends AppCompatActivity {
                 }
             }
         });
-        info.setOnClickListener(v -> {
-            AlertDialog alertDialog1 = new AlertDialog.Builder(this)
-                    .setTitle(R.string.titel)//标题
-                    .setMessage(R.string.content)//内容
-                    .setIcon(R.mipmap.lock)//图标
-                    .setCancelable(true)
-                    .create();
-            alertDialog1.show();
-        });
+        info.setOnClickListener(v -> new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.titel)//标题
+                .setMessage(R.string.content)//内容
+                .setIcon(R.mipmap.lock)//图标
+                .setCancelable(true)
+                .show());
         delete.setOnClickListener(v -> {
             textIn.setText("");
             textOut.setText("");
